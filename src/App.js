@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/react-doctors-app' element={<Main />}/>
-        <Route path='/doctorDetails/:id' element={<DocDetails />}/>
+        <Route path='/react-doctors-app/doctorDetails/:id' element={<DocDetails />}/>
       </Routes>
       <Footer />
     </div>
