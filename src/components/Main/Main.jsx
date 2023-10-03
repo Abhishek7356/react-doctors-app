@@ -26,7 +26,7 @@ function Main() {
                     <Card.Subtitle className="mb-2 text-muted">{item.name}</Card.Subtitle>
                     <Card.Text>Phone : {item.specialty}</Card.Text>
                     <Card.Text><i class="fa-solid fa-star text-warning"></i> {item.rating}</Card.Text>
-                    <Link to={`doctorDetails/${item.id}`}><Card.Link href="#" className='btn btn-primary' >More details</Card.Link></Link>
+                    <Link to={`/react-doctors-app/doctorDetails/${item.id}`}><Card.Link href="#" className='btn btn-primary' >More details</Card.Link></Link>
                 </Card.Body>
             </Card>
         )
