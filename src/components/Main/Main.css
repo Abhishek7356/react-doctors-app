@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(219, 221, 222) !important;
+}
+
+.outerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 85%;
+    margin: auto;
+}
