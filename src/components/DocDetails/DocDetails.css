@@ -1,24 +1,57 @@
-
-.outerDiv{
+.outerDiv {
     width: 100%;
     /* height: 92vh; */
     padding: 20px;
+    background-image: url('https://cdn.wallpapersafari.com/34/41/WG4Hvm.jpg');
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.innerDiv{
+.centerName{
     display: flex;
+    justify-content: center;
+    gap: 50px;
     align-items: center;
-    flex-direction: column;
+    padding: 30px;
 }
-.days{
+
+.innerDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 15px 20px 5px;
+    border-radius: 15px;
+    color: rgb(30, 30, 30) !important;
+}
+
+.days {
     display: flex;
     gap: 10px;
 }
-.review{
+
+/* .review{
     border: 1px solid #000;
     padding: 7px;
     border-radius: 7px;
     margin: 10px;
+} */
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+@media screen and (max-width: 600px) {
+    .centerName{
+        flex-direction: column;
+        gap: 10px;
+        padding: 0px;
+    }
+    .outerDiv {
+        padding: 0px;
+    }
 }

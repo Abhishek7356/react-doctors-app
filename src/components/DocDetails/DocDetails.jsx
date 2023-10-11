@@ -27,30 +27,43 @@ function DocDetails() {
         return item.id == id
     }).map((item) => {
         return (
-            <div className="innerDiv">
-                <h1 className='fw-bold'>{item.hospital}</h1>
-                <h3>{item.name} ({item.specialty})</h3>
-                <h5>phone : {item.phone}</h5>
-                <p>Location : {item.address}</p>
-                <p>Available time : {item.available_hours}</p>
-                <p>Location : {item.address}</p>
-                <p>Email : {item.email}</p>
-                <hr />
-                <h6>Available days : </h6>
-                <div className="days">
-                    {item.available_days &&
-                        item.available_days.map((item) => (
-                            <p>{item}</p>
-                        ))
-                    }
+            <div className="innerDiv shadow">
+                <div className=' centerName'>
+                    <div className=' rounded shadow p-4'>
+                        <h2 className='fw-bold mb-4 text-info'>{item.hospital}</h2>
+                        <h4>{item.name} ({item.specialty})</h4>
+                        <h5>phone : {item.phone}</h5>
+                    </div>
+                    <div>
+                        <p>Location : {item.address}</p>
+                        <p>Available time : {item.available_hours}</p>
+                        <p>Location : {item.address}</p>
+                        <p>Email : {item.email}</p>
+                        <hr />
+                        <h6>Available days : </h6>
+                        <div className="days">
+                            {item.available_days &&
+                                item.available_days.map((item) => (
+                                    <p>{item}  | </p>
+                                ))
+                            }
+                        </div>
+                    </div>
                 </div>
-                <div>
+
+                <hr />
+                <div className='review'>
                     <h5>reviews : </h5>
                     {item.reviews &&
                         item.reviews.map((item) => (
-                            <div className='review shadow'>
-                                <h5>{item.patient_name} on ({item.date})</h5>
+                            <div className='review'>
+                                <div className='d-flex'>
+                                    <h6 style={{width:'85%'}}>{item.patient_name} on ({item.date})</h6>
+                                    <p><i class="fa-solid text-warning fa-star"></i> {item.rating}</p>
+
+                                </div>
                                 <p>-{item.comments}</p>
+                                <hr />
                             </div>
                         ))
                     }

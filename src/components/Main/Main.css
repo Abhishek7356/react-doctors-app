@@ -1,5 +1,7 @@
 body {
-    background-color: rgb(219, 221, 222) !important;
+    /* background-color: rgb(219, 221, 222) !important; */
+    background-image: url('https://cdn.wallpapersafari.com/34/41/WG4Hvm.jpg');
+    background-size: cover;
 }
 
 .outerContainer {
@@ -10,4 +12,16 @@ body {
     padding-bottom: 30px;
     width: 85%;
     margin: auto;
+}
+
+.cards {
+    background-color: rgba(230, 223, 223, 0.7) !important;
+    -webkit-backdrop-filter: blur(2px) !important;
+    backdrop-filter: blur(2px) !important;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-position: right;
+    }
 }

@@ -20,7 +20,7 @@ function Main() {
 
     let allDocterDetails = doctorDetails.map((item) => {
         return (
-            <Card style={{ width: '19rem' }}>
+            <Card className='cards' style={{ width: '19rem' }}>
                 <Card.Body>
                     <Card.Title>{item.hospital}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">{item.name}</Card.Subtitle>

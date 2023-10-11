@@ -11,7 +11,7 @@ function Header() {
                 <Container>
                     <Link to={'/react-doctors-app'}><Navbar.Brand className='fw-bold text-light' href="">
                         <i class="fa-solid fa-user-doctor fa-bounce me-2"></i>
-                        React Bootstrap
+                        Doctor appoinment
                     </Navbar.Brand></Link>
                 </Container>
             </Navbar>
